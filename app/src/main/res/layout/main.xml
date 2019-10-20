@@ -1,0 +1,276 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+		android:id="@+id/layer1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingBottom="20dp"
+		android:background="@drawable/gradient">
+		
+		<RelativeLayout
+			android:id="@+id/imgHolder"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:layout_marginTop="20dp"
+			android:background="@drawable/imgborder">
+			
+			<de.hdodenhof.circleimageview.CircleImageView 
+				xmlns:app="http://schemas.android.com/apk/res-auto"
+				app:civ_border_width="5dp"
+				app:civ_border_color="#ffffff"
+				android:layout_width="120dp"
+				android:layout_height="120dp"
+				android:layout_margin="9dp"
+				android:scaleType="centerCrop"
+				android:src="@drawable/pic"/>
+			
+		</RelativeLayout>
+		
+		<TextView
+			android:id="@+id/my_name"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/imgHolder"
+			android:layout_centerHorizontal="true"
+			android:layout_marginTop="15sp"
+			android:fontFamily="sans-serif-light"
+			android:text="Anisur Rahman"
+			android:textColor="#ffffff"
+			android:textSize="32sp"/>
+		
+		<TextView
+			android:id="@+id/my_address"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/my_name"
+			android:layout_centerHorizontal="true"
+			android:fontFamily="sans-serif"
+			android:text="ctg, bangladesh"
+			android:textAllCaps="true"
+			android:textColor="#ffffff"
+			android:textSize="14sp"/>
+		
+	</RelativeLayout>
+	
+	<LinearLayout
+		android:id="@+id/layer2"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/layer1"
+		android:orientation="horizontal">
+		
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_weight="1"
+			android:background="#ae1d13"
+			android:gravity="center"
+			android:paddingBottom="5dp"
+			android:paddingTop="5dp">
+			
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:gravity="center_horizontal"
+				android:orientation="vertical">
+				
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:fontFamily="sans-serif-light"
+					android:text="829+"
+					android:textColor="#ffffff"
+					android:textSize="25sp"/>
+				
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:fontFamily="sans-serif-light"
+					android:text="subscriber"
+					android:textAllCaps="true"
+					android:textColor="#ffffff"
+					android:textSize="13sp"/>
+				
+			</LinearLayout>
+			
+		</RelativeLayout>
+		
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_weight="1"
+			android:background="#ff0f00"
+			android:gravity="center"
+			android:paddingBottom="5dp"
+			android:paddingTop="5dp">
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:gravity="center_horizontal"
+				android:orientation="vertical">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:fontFamily="sans-serif-light"
+					android:text="94,477"
+					android:textColor="#ffffff"
+					android:textSize="25sp"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:fontFamily="sans-serif-light"
+					android:text="views"
+					android:textAllCaps="true"
+					android:textColor="#ffffff"
+					android:textSize="13sp"/>
+
+			</LinearLayout>
+
+		</RelativeLayout>
+		
+	</LinearLayout>
+	
+	<RelativeLayout
+		android:id="@+id/layer3"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@+id/layer2">
+		
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:layout_marginLeft="30dp"
+			android:layout_marginRight="30dp"
+			android:layout_marginTop="20dp"
+			android:orientation="vertical">
+			
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+				
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Email"
+					android:textColor="#ff0f00"
+					android:textSize="13sp"/>
+				
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:fontFamily="sans-serif-light"
+					android:text="anis14109@gmail.com"
+					android:textColor="#000000"
+					android:textSize="18sp"/>
+				
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="1dp"
+					android:layout_marginTop="15dp"
+					android:background="#e5e5e5"/>
+				
+			</LinearLayout>
+			
+			<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="15dp"
+					android:orientation="vertical">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Phone"
+					android:textColor="#ff0f00"
+					android:textSize="13sp"/>
+				
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:fontFamily="sans-serif-light"
+					android:text="+880 0000 000000"
+					android:textColor="#000000"
+					android:textSize="18sp"/>
+				
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="1dp"
+					android:layout_marginTop="15dp"
+					android:background="#e5e5e5"/>
+				
+			</LinearLayout>
+			
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="15dp"
+				android:orientation="vertical">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Youtube"
+					android:textColor="#ff0f00"
+					android:textSize="13sp"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:fontFamily="sans-serif-light"
+					android:text="youtube.com/anisurrahman"
+					android:textColor="#000000"
+					android:textSize="18sp"/>
+
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="1dp"
+					android:layout_marginTop="15dp"
+					android:background="#e5e5e5"/>
+
+			</LinearLayout>
+			
+			
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="15dp"
+				android:orientation="vertical">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Github"
+					android:textColor="#ff0f00"
+					android:textSize="13sp"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:fontFamily="sans-serif-light"
+					android:text="github.com/anisur056"
+					android:textColor="#000000"
+					android:textSize="18sp"/>
+
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="1dp"
+					android:layout_marginTop="15dp"
+					android:background="#e5e5e5"/>
+
+			</LinearLayout>
+			
+		</LinearLayout>
+		
+	</RelativeLayout>
+	
+</RelativeLayout>
